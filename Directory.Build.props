@@ -9,6 +9,9 @@
 
     <BaseOutputPath>$(MSBuildThisFileDirectory)BuildOutput\$(Configuration)</BaseOutputPath>
     <OutDir>$(BaseOutputPath)\$(Platform)\</OutDir>
+    
+    <AppxPackageDir>$(OutDir)\AppxPackages</AppxPackageDir>
+    <AppxBundle>Never</AppxBundle>
 
     <!-- For native projects that use Win32 to mean x86, override the OutDir
          property to provide consistency between projects. -->
